@@ -7,6 +7,11 @@ using namespace std;
 
 const int N = 1e5;
 
+/// if a is co-prime with b
+/// then it doesn't matter the value of c
+/// ax+by = c (c can be any number)
+/// other-wise gcd(a, b) must be divide c
+
 int gc(int a, int b){
   if (b==0)return a;
   return gc(b, a%b);
